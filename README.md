@@ -1,6 +1,6 @@
 # General Kinetic Model for Time-SLIP
 
-![Preview](./preview.png)
+<img src="./preview.png" alt="Preview" width="500"/>
 
 ## Overview
 
