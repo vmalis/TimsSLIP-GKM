@@ -68,7 +68,7 @@ control=ones(size(mz,1),1);
 % GKM
 m = control - mz(:,1);
 m = m(1:(t_total-lastPulseIdx*dt)/dt+1);
-GKM0 = ASL_gkm(T1,delta_t,tau,dt,t_total-lastPulseIdx*dt+dt,m,f);
+GKM0 = alpha*ASL_gkm(T1,delta_t,tau,dt,t_total-lastPulseIdx*dt+dt,m,f);
 switch type
     case 'bright'
         m = alpha^(numel(pulses)+1)*abs(mz(:,1) - mz(:,2));
